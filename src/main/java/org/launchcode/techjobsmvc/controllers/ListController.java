@@ -1,7 +1,7 @@
 package org.launchcode.techjobsmvc.controllers;
 
-import org.launchcode.techjobsmvc.models.Job;
-import org.launchcode.techjobsmvc.models.JobData;
+import org.launchcode.techjobsmvc.controllers.models.Job;
+import org.launchcode.techjobsmvc.controllers.models.JobData;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,6 +28,7 @@ public class ListController {
         columnChoices.put("positionType", "Position Type");
         columnChoices.put("coreCompetency", "Skill");
 
+        tableChoices.put("all", "All Jobs");
         tableChoices.put("employer", JobData.getAllEmployers());
         tableChoices.put("location", JobData.getAllLocations());
         tableChoices.put("positionType", JobData.getAllPositionTypes());

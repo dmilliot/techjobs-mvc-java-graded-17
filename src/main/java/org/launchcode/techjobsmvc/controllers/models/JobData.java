@@ -1,4 +1,4 @@
-package org.launchcode.techjobsmvc.models;
+package org.launchcode.techjobsmvc.controllers.models;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
